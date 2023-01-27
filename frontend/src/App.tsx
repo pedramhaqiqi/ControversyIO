@@ -13,8 +13,8 @@ import Fade from '@mui/material/Fade';
 import OutlinedCard from './cardComp'
 // import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
-import send_icon from './assets/sent.png'
 import { useState } from 'react';
+import React from 'react';
 
 function App() {
   const txt= useRef(null)
@@ -74,9 +74,9 @@ function App() {
       <Fade in={show === true} timeout={4000}>
        <Box>
         <Box sx = {{display: 'flex', mt : '5vh', justifyContent: 'center', alignContent: 'center'}}>
-            <OutlinedCard name ="Positive Argument" data  ></OutlinedCard>
-            <OutlinedCard name ="Neutral Argument" data ></OutlinedCard>
-            <OutlinedCard name ="Negative Argument" data ></OutlinedCard>
+            <OutlinedCard name ="Positive Argument" data = ''  ></OutlinedCard>
+            <OutlinedCard name ="Neutral Argument" data = '' ></OutlinedCard>
+            <OutlinedCard name ="Negative Argument" data = '' ></OutlinedCard>
         </Box>
         <Button sx = {{mt:'1.5vh', mb: '1.5vh'}} variant="contained" size="medium" onClick={()=>setSubmit(false)}> Try Again 
         </Button>
