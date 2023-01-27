@@ -15,6 +15,20 @@ import OutlinedCard from './cardComp'
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import React from 'react';
+import { ChatGPTAPIBrowser } from 'chatgpt'
+
+async function example() {
+  // use puppeteer to bypass cloudflare (headful because of captchas)
+  const api = new ChatGPTAPIBrowser({
+    email: 'pedram.meskoubhaghighi@mail.utoronto.ca',
+    password: 'Mishaandkissa1986'
+  })
+
+  await api.initSession()
+
+  const result = await api.sendMessage('Hello World!')
+  console.log(result.response)
+}
 
 function App() {
   const txt= useRef(null)
