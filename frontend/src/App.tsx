@@ -15,21 +15,21 @@ import OutlinedCard from './cardComp'
 import TextField from '@mui/material/TextField';
 import { useState } from 'react';
 import React from 'react';
-import { ChatGPTAPI, getOpenAIAuth } from 'chatgpt'
+// import { ChatGPTAPI, getOpenAIAuth } from 'chatgpt'
 
-async function example() {
-  // use puppeteer to bypass cloudflare (headful because of captchas)
-  const openAIAuth = await getOpenAIAuth({
-    email: 'pedram.meskoubhaghighi@mail.utoronto.ca',
-    password: 'Mishaandkissa1986'
-  })
+// async function example() {
+//   // use puppeteer to bypass cloudflare (headful because of captchas)
+//   const openAIAuth = await getOpenAIAuth({
+//     email: 'pedram.meskoubhaghighi@mail.utoronto.ca',
+//     password: 'Mishaandkissa1986'
+//   })
 
-  const api = new ChatGPTAPI({ ...openAIAuth })
-  await api.initSession()
+//   const api = new ChatGPTAPI({ ...openAIAuth })
+//   await api.initSession()
 
-  const result = await api.sendMessage('Hello World!')
-  console.log(result.response)
-}
+//   const result = await api.sendMessage('Hello World!')
+//   console.log(result.response)
+// }
 
 function App() {
   const txt= useRef(null)
