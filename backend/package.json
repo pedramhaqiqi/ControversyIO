@@ -1,0 +1,14 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "desc",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@sanity/client": "^4.0.1",
+    "cohere-ai": "^5.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
